@@ -1,0 +1,227 @@
+.section-second {
+    background-color: rgba(0, 128, 0, 0.9);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.card {
+    -ms-flex-preferred-size: 26%;
+    flex-basis: 26%;
+    height: 70vh;
+    -webkit-transition: -webkit-transform 1.2s linear;
+    transition: -webkit-transform 1.2s linear;
+    -o-transition: transform 1.2s linear;
+    transition: transform 1.2s linear;
+    transition: transform 1.2s linear, -webkit-transform 1.2s linear;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    -border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.card:hover{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.card figure {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 5px #000;
+    letter-spacing: 2px;
+}
+
+.card h1 {
+    font-weight: 100;
+}
+
+.card p {
+    font-weight: 100;
+    padding: 30px;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 2em;
+}
+
+.card .card-front {
+    background-color: rgb(55, 170, 55);
+    color: #fff;
+    text-align: center;
+}
+
+.card .card-front i {
+    padding: 20px 0;
+    font-size: 4em;
+}
+
+.card .card-front img {
+   width: 60px;
+   padding: 20px 0;
+}
+
+.card .card-back {
+    background-color: rgb(4, 37, 4);
+    color: #fff;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+                 backface-visibility: hidden;
+}
+
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+/* media query */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+
+@media screen and (max-width: 1022px) {
+    .section-second {
+        background-color: rgba(0, 128, 0, 0.9);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0 20px;
+    }
+    
+    .card {
+        -ms-flex-preferred-size: 28%;
+            flex-basis: 28%;
+        height: 80vh;
+    }
+    
+    .card h1 {
+        font-size: 1.3em;
+    }
+    
+    .card p {
+        padding: 15px;
+        font-size: 0.6em;
+    }
+    
+    .card .card-front i {
+        font-size: 3.5em;
+    }
+    
+    .card .card-front img {
+       width: 55px;
+    }
+}
+
+/* /* iPad portrait · width: 768px */
+@media only screen and (max-width: 769px) and (min-width: 766px)  { 
+    .section-second {
+        padding: 0 0px;
+        height: 60vh;
+    }
+    
+    .card {
+        -ms-flex-preferred-size: 28%;
+        flex-basis: 28%;
+        height: 40vh;
+    }
+    
+    .card p {
+        padding: 25px;
+        font-size: 0.7rem;
+    }
+    
+    .card .card-back h1{
+       display: none;
+    }
+}
+
+/* iPhone 6-8 landscape · width: 667px */
+@media screen and (max-width: 668px) and (min-width: 665px) {
+    .section-second {
+        height: 110vh;
+        padding: 5px 0;
+    }
+    
+    .card .card-back h1 {
+       display: none;
+    }
+}
+
+ /* iPad portrait · width: 768px */
+@media only screen and (max-width: 769px) and (min-width: 766px)  { 
+    .section-second {
+        padding: 0 0px;
+        height: 60vh;
+    }
+    
+    .card {
+        -ms-flex-preferred-size: 28%;
+        flex-basis: 28%;
+        height: 40vh;
+    }
+    
+    .card p {
+        padding: 25px;
+        font-size: 0.7rem;
+    }
+    
+    .card .card-back h1{
+       display: none;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 567px) {
+    .section-second {
+        flex-wrap: wrap;
+        padding: 10px;
+        height: 120vh;
+    }
+    
+    .card {
+        flex-basis: 90%;
+        height: 32vh;
+    }
+        
+    .card p {
+        padding: 10px;
+        font-size: 0.6em;
+        line-height: 2em;
+    }
+    
+    .card .card-front i {
+        font-size: 3.5em;
+    }
+    
+    .card .card-front img {
+       width: 55px;
+    }
+}

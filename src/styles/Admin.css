@@ -1,0 +1,9 @@
+.adminPage {
+    width: 100vw;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5BCC4C;
+    color: #fff;
+}
